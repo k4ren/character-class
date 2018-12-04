@@ -1,8 +1,8 @@
-import {Container, Content, Header, Title, Button, Icon, Text, StyleProvider, Left,Body,Right, CardItem, Card, Thumbnail } from 'native-base'; //Include Nativebase required components
+import {Container, Content, Header, Title, Button, Icon, Text, Left,Body,Right, CardItem, Card, Thumbnail } from 'native-base'; //Include Nativebase required components
 import { Image } from 'react-native';
 import { Font } from 'expo'; //to include font from expo.
-import getTheme from '../native-base-theme/components';
-import material from '../native-base-theme/variables/material';
+// import getTheme from '../native-base-theme/components';
+// import material from '../native-base-theme/variables/material';
 
 import React, { Component } from 'react';
 
@@ -29,7 +29,6 @@ export class Character extends Component {
 
   render() {
     return (
-      <StyleProvider style={getTheme(material)}>
       <Container>
         {
            this.state.fontLoaded ? (
@@ -70,7 +69,6 @@ export class Character extends Component {
         ) : null
         }
       </Container>
-      </StyleProvider>
     )
   }
 }
