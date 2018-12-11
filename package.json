@@ -8,13 +8,21 @@
     "ios": "expo start --ios",
     "eject": "expo eject"
   },
+  "scripts": {
+    "relay": "relay-compiler --src ./src --schema ./data/schema.graphql"
+  },
   "dependencies": {
     "@expo/vector-icons": "^8.0.0",
+    "babel-plugin-relay": "^1.7.0",
     "expo": "^31.0.2",
+    "graphql": "^14.0.2",
     "native-base": "^2.8.1",
-    "react": "16.5.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.6.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
-    "react-navigation": "^3.0.2"
+    "react-navigation": "^3.0.2",
+    "react-relay": "^1.7.0",
+    "relay-compiler": "^1.7.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
